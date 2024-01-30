@@ -19,5 +19,10 @@ public class QuestionService {
     public List<Question> getQuestionByCategory(String category) {
         return questionDao.findByCategory(category);
     }
+
+    public String addQuestion(Question question) {
+         questionDao.save(question);
+         return "success";
+    }
 }
 
