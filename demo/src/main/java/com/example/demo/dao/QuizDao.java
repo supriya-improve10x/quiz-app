@@ -1,0 +1,9 @@
+package com.example.demo.dao;
+
+import com.example.demo.question.Quiz;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface QuizDao extends JpaRepository<Quiz,Integer> {
+
+
+}
